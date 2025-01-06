@@ -222,31 +222,27 @@ $siswa = query("SELECT * FROM siswa ORDER BY id DESC");
                     </div>
                   </div>
                 </div>
-      <div class="countainer-fluid pt-5 pb-5">
+     <div class="countainer-fluid pt-5 pb-5">
         <div class="countainer">
           <h2 class="display-3 text-center" id="kontak">Kontak</h2>
-          <p class="text-center">Silahkan isi data diri anda sesuai dengan Keterampilan Anda</p>
-        <div class="row pb-3">
+          <p class="text-center">Silahkan Hubungi Kami</p>
+          <h1>Kirim Pesan</h1>
+        <form action="https://formspree.io/f/xbljvgav" method="POST" target="_blank">
+            <form id="contactForm" action="https://formspree.io/f/xbljvgav" method="POST">
+    <input class="form-control form-control-lg mb-2" type="text" name="name" placeholder="Nama Anda" required>
+    <input class="form-control form-control-lg mb-2" type="email" name="email" placeholder="Email Anda" required>
+    <textarea class="form-control form-control-lg" name="message" placeholder="Tulis pesan Anda di sini..." rows="5" required></textarea>
           <div class="col-md-6">
-            <input class="form-control form-control-lg mb-2" type="text" placeholder="Nama"/>
-            <input class="form-control form-control-lg mb-2" type="text" placeholder="Bidang yang diminati"/>
-            <input class="form-control form-control-lg mb-2" type="text" placeholder="Email"/>
-            <input class="form-control form-control-lg" type="text" placeholder="No Handphone"/>
-          </div>
-          <div class="col-md-6">
-            <textarea class="form-control form-control-lg" rows="7"></textarea>
-          </div>
-        </div>
-        <div class="col-md-3 mx-auto text-center">
-          <button type="button" class="btn btn-danger btn-lg">
-            Kirim Pesan
-          </button>
+           <div class="col-md-3 center">
+          <button type="submit" class="btn btn-danger btn-lg">
+            Kirim Pesan </button>
         </div>
         </div>
       </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+</form>
 </html>
 <!DOCTYPE html>
 <html lang="en">
